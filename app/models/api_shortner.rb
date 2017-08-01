@@ -5,8 +5,4 @@ class ApiShortner < ApplicationRecord
     self.slug = self.id.to_s(36)
     self.save
   end
-
-  def display_slug
-     self.slug
-  end
 end

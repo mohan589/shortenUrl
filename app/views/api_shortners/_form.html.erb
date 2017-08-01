@@ -9,10 +9,10 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
+  <div class="input-group">
     <%= f.text_field :input_url, :class => "form-control", :placeholder => "Paste a link to shorten" %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Shorten Me', :class => "btn btn-primary"%>
+    <span class="input-group-btn">
+          <%= f.submit 'Shorten Me', :class => "btn btn-primary"%>
+      </span
   </div>
 <% end %>
