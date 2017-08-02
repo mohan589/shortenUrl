@@ -16,7 +16,7 @@ gem 'responders'
 # Use Puma as the app server
 gem 'jquery-rails'
 gem "figaro"
-gem 'pg'
+gem 'mysql2'
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

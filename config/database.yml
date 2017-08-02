@@ -14,10 +14,12 @@ development:
   database: db/development.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: sample_development
-  username: postgres
-  password:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: shortner_prod
+  pool: 5
+  username: mohan
+  password: mohan143
   host: localhost
-  port: 5432
+  port: 3306
