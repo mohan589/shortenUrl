@@ -1,1 +1,1 @@
-$('.shortner').append('<div class="col-lg-3"><div class="panel panel-default"><div class="panel-body"><p class="short_url"><%= link_to request.original_url + "/" + @api_shortner.slug, api_shortner_path(@api_shortner.slug), target: "_blank" %></p></div></div></div>')
+$('.shortner').append('<div class="col-lg-6"><div class="panel panel-default"><div class="panel-body"><p class="short_url"><%= link_to request.original_url + "/" + @api_shortner.slug, api_shortner_path(@api_shortner.slug), target: "_blank" %></p></div></div></div>')
