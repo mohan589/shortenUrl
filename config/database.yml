@@ -12,7 +12,7 @@ default: &default
 development:
   <<: *default
   database: db/development.sqlite3
-  
+
 
 production:
   adapter: mysql2
@@ -20,7 +20,7 @@ production:
   reconnect: false
   database: shortner_prod
   pool: 5
-  username: root
-  password: mohan143
-  host: 127.0.0.1
+  username: b0c4baf3eba144
+  password: eae8aa72
+  host: https://shortengivenurl.herokuapp.com/
   port: 3306
