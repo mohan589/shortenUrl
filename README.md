@@ -4,22 +4,6 @@ This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
+Application with sqlite3 for now database for development mode.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# shortenUrl
+Please do bundle && rake db:create && rake db:migrate && rails s
