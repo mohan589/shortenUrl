@@ -19,7 +19,7 @@ production:
   reconnect: false
   database: shortner_prod
   pool: 5
-  username: b0c4baf3eba144:eae8aa72
-  password: eae8aa72@us-cdbr-iron-east-03.cleardb.net
+  username: root
+  password: mohan143
   host: localhost
   port: 3306
