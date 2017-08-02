@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170801154657) do
+ActiveRecord::Schema.define(version: 20170802090635) do
 
   create_table "api_shortners", force: :cascade do |t|
     t.string "input_url"
     t.string "slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "num_of_clicks"
   end
 
 end
