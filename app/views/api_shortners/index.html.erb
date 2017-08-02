@@ -1,23 +1,25 @@
 <div class="container">
-  <div class="col-lg-6 col-md-offset-3">
-    <div class="title">
-      <h1>All Shorten links</h1>
-    </div>
-    <div class="row">
+  <div class="col-lg-12 ">
       <div class="panel panel-default">
+        <div class="panel panel-title col-md-offset-4">
+          <h1>All Shorten links</h1>
+        </div>
         <div class="panel-body">
           <%= render 'api_shortners/form' %>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <% @shortners.each do |shortner| %>
-        <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 link">
-          <p class="short_url"> <%= link_to request.original_url + 'api_shortner/' + shortner.slug, api_shortner_path(shortner.slug), target: '_blank' %></p>
-        </div>
-      <% end %>
-      <div class="shortner col-lg-6 col-md-4 col-sm-6 col-xs-12 link">
-      </div>
     </div>
   </div>
+</div>
+
+<% @shortners.each do |shortner| %>
+  <div class="col-lg-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+            <p class="short_url"> <%= link_to shortner.mask_url, api_shortner_path(shortner.slug), target: '_blank' %></p>
+          </div
+        </div>
+    </div>
+  </div>
+<% end %>
+<div class="shortner">
 </div>
