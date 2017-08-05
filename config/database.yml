@@ -27,20 +27,20 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: 172.17.0.1
-  port: 5433
+  host: <%= ENV['DB_HOST'] %>
+  port: <%= ENV['DB_HOST_PORT'] %>
   pool: 5
-  username: postgres
-  password: mohan143
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 development:
   <<: *default
-  database: your_dev_db_name #CHANGE ME
+  database: <%= ENV['DEV_DB'] %> #CHANGE ME
 
 test:
   <<: *default
-  database: your_test_db_name #CHANGE ME
+  database: <%= ENV['TEST_DB'] %> #CHANGE ME
 
 production:
   <<: *default
-  database: your_production_db_name #CHANGE ME
+  database:  <%= ENV['PRO_DB'] %>
