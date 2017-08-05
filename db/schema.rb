@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20170802090635) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "api_shortners", force: :cascade do |t|
     t.string "input_url"
     t.string "slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "num_of_clicks"
+    t.integer "num_of_clicks", default: 0, null: false
   end
 
 end
